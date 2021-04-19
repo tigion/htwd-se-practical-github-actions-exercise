@@ -19,7 +19,7 @@ public class Town {
 	}
 
 	public void setName(String name) {
-		if (name == null || name.isEmpty() || name.isBlank())
+		if (name == null || name.isBlank())
 			throw new RuntimeException("Exception: empty String or null value");
 		else
 			this.name = name;

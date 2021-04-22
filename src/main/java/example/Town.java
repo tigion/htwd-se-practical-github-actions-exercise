@@ -29,8 +29,9 @@ public class Town {
 		this.residents = residents;
 	}
 
+	@Override
 	public String toString() {
-		return "Name: " + this.name + ", Residents: " + this.residents;
+		return "Town [name=" + name + ", residents=" + residents + "]";
 	}
 
 	public static void main(String[] args) {

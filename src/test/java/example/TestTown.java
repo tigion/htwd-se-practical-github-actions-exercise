@@ -92,7 +92,7 @@ class TestTown {
 	@Test
 	void test5_toStringFunction() {
 		Town t = new Town(testValue1Name, testValue1Residents);
-		String testValue = "Name: " + testValue1Name + ", Residents: " + testValue1Residents;
+		String testValue = "Town [name=" + testValue1Name + ", residents=" + testValue1Residents + "]";
 		assertEquals(testValue, t.toString(), "Output not match template");
 	}
 

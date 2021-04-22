@@ -13,10 +13,12 @@ src
 ├── main
 │   └── java
 │       └── example
+│           ├── Main.java
 │           └── Town.java
 └── test
     └── java
         └── example
+            ├── TestMain.java
             └── TestTown.java
 ```
 
@@ -26,8 +28,10 @@ Datei           | Beschreibung
 --------------- | ------------
 `README.md`     | Beschreibung des Repository im MarkDown-Format
 `pom.xml`       | Beschreibung des Maven-Projektes im XML-Format
+`Main.java`     | Klasse `Main` für die `main()` Methode
 `Town.java`     | Klasse `Town` für eine Stadt mit Name (`name`) und Einwohneranzahl (`residents`) und zugehörigen Methoden
-`TestTown.java` | Klasse `TestTown` mit JUnit-Tests zum Testen der `Town`-Klasse
+`TestMain.java` | Klasse `TestMain` mit beispielhaften JUnit-Tests zum Testen der `Main`-Klasse
+`TestTown.java` | Klasse `TestTown` mit beispielhaften JUnit-Tests zum Testen der `Town`-Klasse
 
 ### Hinweise zu GitHub Actions
 
@@ -58,5 +62,5 @@ Folgend ein paar hilfreiche Kommandos:
 
 - Ausführen der erstellten JAR-Datei:
     ```
-    % java -cp target/example-1.0-SNAPSHOT.jar example.Town
+    % java -cp target/example-1.0-SNAPSHOT.jar example.Main
     ```

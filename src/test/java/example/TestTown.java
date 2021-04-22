@@ -8,9 +8,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 
-import example.Town;
 
 class TestTown {
 
@@ -96,14 +94,4 @@ class TestTown {
 		assertEquals(testValue, t.toString(), "Output not match template");
 	}
 
-	@DisplayName("T06: Main function without unhandled Exception")
-	@Test
-	void test6_mainFunction() {
-		try {
-			Town.main(null);
-		} catch (Exception ex) {
-			fail("Exception ...");
-		}
-		assertTrue(true);
-	}
 }

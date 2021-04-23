@@ -20,9 +20,8 @@ public class Town {
 
 	public void setName(String name) {
 		if (name == null || name.isBlank())
-			throw new RuntimeException("Exception: empty String or null value");
-		else
-			this.name = name;
+			throw new IllegalArgumentException("name cannot be null, empty or contain only spaces");
+		this.name = name;
 	}
 
 	public void setResidents(int residents) {

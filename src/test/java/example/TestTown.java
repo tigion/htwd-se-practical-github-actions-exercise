@@ -69,12 +69,38 @@ class TestTown {
 			t.setResidents(-2);
 		}, message + " (set)");
 
-		/*// assert 1 - less 0 -> Fail
+		/*
+		// assert 1 - less 0 -> 0
 		Town t = new Town(testValue1Name, -1);
 		assertFalse(t.getResidents() < 0, message + " (constructor)");
 		t = new Town(testValue1Name, testValue1Residents);
 		t.setResidents(-2);
-		assertFalse(t.getResidents() < 0, message + " (set)");*/
+		assertFalse(t.getResidents() < 0, message + " (set)");
+		*/
+
+		/*
+		try {
+
+			// variant: set to min default value 0
+			// assert 1 - less 0 -> 0
+			Town t = new Town(testValue1Name, -1);
+			assertFalse(t.getResidents() < 0, message + " (constructor)");
+			t = new Town(testValue1Name, testValue1Residents);
+			t.setResidents(-2);
+			assertFalse(t.getResidents() < 0, message + " (set)");
+
+		} catch(Exception e) {
+
+			// variant: exception
+			// assert 1 - less 0 -> IllegalArgumentException
+			assertThrows(IllegalArgumentException.class, () -> new Town(testValue1Name, -1), message + " (constructor)");
+			assertThrows(IllegalArgumentException.class, () -> {
+				Town t = new Town(testValue1Name, testValue1Residents);
+				t.setResidents(-2);
+			}, message + " (set)");
+
+		}
+		*/
 	}
 
 	@DisplayName("T03: Get correct town name")

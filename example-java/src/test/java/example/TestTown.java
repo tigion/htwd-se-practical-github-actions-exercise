@@ -40,7 +40,7 @@ class TestTown {
 	void test1_TownName() {
 		String message;
 		Town t = new Town(testValue1Name, testValue1Residents);
-
+		
 		// assert 1 - null
 		message = "name is null";
 		assertThrows(IllegalArgumentException.class, () -> new Town(null, 0), message + " (constructor)");
@@ -50,7 +50,7 @@ class TestTown {
 		message = "name is empty";
 		assertThrows(IllegalArgumentException.class, () -> new Town("", 0), message + " (constructor)");
 		assertThrows(IllegalArgumentException.class, () -> t.setName(""), message + " (set)");
-
+		
 		// assert 3 - only white spaces
 		message = "name contains only spaces";
 		assertThrows(IllegalArgumentException.class, () -> new Town("  ", 0), message + " (constructor)");
@@ -61,14 +61,15 @@ class TestTown {
 	@Test
 	void test2_TownResidents() {
 		String message = "residents is less 0";
-
+		
+		
 		// assert 1 - less 0 -> IllegalArgumentException
 		assertThrows(IllegalArgumentException.class, () -> new Town(testValue1Name, -1), message + " (constructor)");
 		assertThrows(IllegalArgumentException.class, () -> {
 			Town t = new Town(testValue1Name, testValue1Residents);
 			t.setResidents(-2);
 		}, message + " (set)");
-
+		
 		/*
 		// assert 1 - less 0 -> 0
 		Town t = new Town(testValue1Name, -1);
@@ -77,7 +78,7 @@ class TestTown {
 		t.setResidents(-2);
 		assertFalse(t.getResidents() < 0, message + " (set)");
 		*/
-
+		
 		/*
 		try {
 
@@ -109,7 +110,7 @@ class TestTown {
 		// assert 1 - constructor equals get
 		Town t = new Town(testValue1Name, testValue1Residents);
 		assertEquals(testValue1Residents, t.getResidents(), "Output not match input");
-
+		
 		// assert 2 - set equals get
 		t.setResidents(testValue2Residents);
 		assertEquals(testValue2Residents, t.getResidents(), "Output not match input");
@@ -121,7 +122,7 @@ class TestTown {
 		// assert 1 - constructor equals get
 		Town t = new Town(testValue1Name, testValue1Residents);
 		assertEquals(testValue1Name, t.getName(), "Output not match input");
-
+		
 		// assert 2 - set equals get
 		t.setName(testValue2Name);
 		assertEquals(testValue2Name, t.getName(), "Output not match input");

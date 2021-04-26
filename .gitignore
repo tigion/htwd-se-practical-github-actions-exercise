@@ -1,7 +1,2 @@
 *~
 .DS_Store
-bin/
-target/
-.classpath
-.project
-.settings

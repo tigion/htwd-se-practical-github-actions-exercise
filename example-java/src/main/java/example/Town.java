@@ -20,7 +20,7 @@ public class Town {
 
 	public void setName(String name) {
 		if (name == null || name.isBlank())
-			throw new IllegalArgumentException("name cannot be null, empty or contain only spaces");
+			throw new IllegalArgumentException("name cannot be null, empty or contain only white spaces");
 		this.name = name;
 	}
 

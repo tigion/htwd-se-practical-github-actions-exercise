@@ -4,14 +4,24 @@ from main.town import Town
 
 class TestTown(unittest.TestCase):
 
-    # test preparation method
-    def setUp(self):
-        self.testValue1Name = "Dresden"
-        self.testValue1Residents = 556780
-        self.testValue2Name = "Leipzig"
-        self.testValue2Residents = 593145
+    # before all tests
+    @classmethod
+    def setUpClass(cls):
+        cls.testValue1Name = "Dresden"
+        cls.testValue1Residents = 556780
+        cls.testValue2Name = "Leipzig"
+        cls.testValue2Residents = 593145
 
-    # post test method
+    # after all tests
+    @classmethod
+    def tearDownClass(cls):
+        pass
+
+    # before each test
+    def setUp(self):
+        pass
+
+    # after each test
     def tearDown(self):
         pass
 

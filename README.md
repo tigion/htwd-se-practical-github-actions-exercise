@@ -1,6 +1,6 @@
 # HTW | Übung: GitHub Actions mit Unit-Tests
 
-Das Repository enthält Übungsprojekte für die Praktikumsaufgabe zu **GitHub Actions** [Teil 8 - Aufgabe 2 - Unit-Tests](https://www.informatik.htw-dresden.de/~zirkelba/praktika/se/arbeiten-mit-git-und-asciidoc/praktikumsaufgaben-teil-10.html#_aufgabe_2_unit_tests) im Fach Software Engineering II.
+Das Repository enthält Übungsprojekte für die Praktikumsaufgabe zu **GitHub Actions** [Teil 10 - Aufgabe 2 - Unit-Tests](https://www.informatik.htw-dresden.de/~zirkelba/praktika/se/arbeiten-mit-git-und-asciidoc/praktikumsaufgaben-teil-10.html#_aufgabe_2_unit_tests) im Fach Software Engineering II.
 
 Enthalten ist jeweils eine simple Anwendung in *Java* (Maven) und *Python* (Unittest), bestehend aus einer `Town`- und `TestTown`-Klasse. Diese sind dem Praktikum zu **UnitTest mit Java und Python** entnommen.
 

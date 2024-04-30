@@ -1,4 +1,4 @@
-# HTW | Übung: GitHub Actions mit Unit-Tests
+# HTWD | Übung: GitHub Actions mit Unit-Tests
 
 Das Repository enthält Übungsprojekte für die Praktikumsaufgabe zu
 **GitHub Actions** [Teil 10 - Aufgabe 2 - Unit-Tests] im Fach

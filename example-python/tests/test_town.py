@@ -40,7 +40,7 @@ class TestTown(unittest.TestCase):
 
     def testTownNameErrorValues(self):
         """T02: Set correct town name
-        - name: cannot be null, empty or contain only spaces)
+        - name: cannot be null, empty or contain only spaces
         """
 
         # constructor

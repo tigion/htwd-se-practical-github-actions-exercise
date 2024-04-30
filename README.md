@@ -6,9 +6,13 @@ Software Engineering II.
 
 [Teil 10 - Aufgabe 2 - Unit-Tests]: https://www.informatik.htw-dresden.de/~zirkelba/praktika/se/arbeiten-mit-git-und-asciidoc/praktikumsaufgaben-teil-10.html#_aufgabe_2_unit_tests
 
-Enthalten ist jeweils eine simple Anwendung in _Java_ (Maven) und
-_Python_ (Unittest), bestehend aus einer `Town`- und `TestTown`-Klasse.
-Diese sind dem Praktikum zu **UnitTest mit Java und Python** entnommen.
+Enthalten ist jeweils eine simple Anwendung in _Java_ ([Maven], [JUnit]) und
+_Python_ ([unittest]), bestehend aus einer `Town`- und `TestTown`-Klasse.
+Diese sind dem Praktikum zu **Unit-Test mit Java und Python** entnommen.
+
+[Maven]: https://maven.apache.org/
+[JUnit]: https://junit.org/junit5/docs/current/user-guide/
+[unittest]: https://docs.python.org/3/library/unittest.html#
 
 > [!WARNING]
 > Ein Test schlägt bewusst fehl, da dieser
@@ -23,7 +27,8 @@ Es liegt jeweils ein Beispielprojekte in **Java** und in **Python** vor:
 └── example-python
 ```
 
-Jedes Projekt enthält im Verzeichnis `.github/workflows/` die zugehörigen **Workflows**.
+Für jedes Projekt werden im Laufe der Bearbeitung der Aufgaben die zugehörigen
+**GitHub Action Workflows** im Verzeichnis `.github/workflows/` abgelegt.
 
 ## Example Java
 
@@ -91,6 +96,9 @@ Folgend ein paar hilfreiche Kommandos (vorher ggf. `cd example-java`):
 
   ```shell
   % java -cp target/example-1.0-SNAPSHOT.jar example.Main
+  Town [name=Dresden, residents=11]
+  Dresden
+  12
   ```
 
 ## Example Python
@@ -145,4 +153,6 @@ Folgend ein paar hilfreiche Kommandos (vorher ggf. `cd example-python`):
 
   ```shell
   % python3 main/main.py
+  Town [name=Dresden, residents=556780]
+  Town [name=Dresden, residents=-1]
   ```

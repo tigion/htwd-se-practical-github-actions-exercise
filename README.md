@@ -10,7 +10,8 @@ Enthalten ist jeweils eine simple Anwendung in _Java_ (Maven) und
 _Python_ (Unittest), bestehend aus einer `Town`- und `TestTown`-Klasse.
 Diese sind dem Praktikum zu **UnitTest mit Java und Python** entnommen.
 
-> [!IMPORTANT]: Ein Test schlägt bewusst fehl, da dieser
+> [!WARNING]
+> Ein Test schlägt bewusst fehl, da dieser
 > im Zuge der Aufgabenbearbeitung mit angepasst wird.
 
 ## Hinweise

@@ -9,33 +9,32 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 
-
 class TestMain {
 
-	@BeforeAll
-	static void setUpBeforeClass() throws Exception {
-	}
+  @BeforeAll
+  static void setUpBeforeClass() throws Exception {
+  }
 
-	@AfterAll
-	static void tearDownAfterClass() throws Exception {
-	}
+  @AfterAll
+  static void tearDownAfterClass() throws Exception {
+  }
 
-	@BeforeEach
-	void setUp() throws Exception {
-	}
+  @BeforeEach
+  void setUp() throws Exception {
+  }
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+  @AfterEach
+  void tearDown() throws Exception {
+  }
 
-	@DisplayName("T01: Main function without unhandled Exception")
-	@Test
-	void test1_mainFunction() {
-		try {
-			Main.main(null);
-		} catch (Exception ex) {
-			fail("Exception ...");
-		}
-		assertTrue(true);
-	}
+  @DisplayName("T01: Main function without unhandled Exception")
+  @Test
+  void test1_mainFunction() {
+    try {
+      Main.main(null);
+    } catch (Exception ex) {
+      fail("Exception ...");
+    }
+    assertTrue(true);
+  }
 }

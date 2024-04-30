@@ -1,5 +1,4 @@
 class Town:
-
     def __init__(self, name, residents):
         self.name = name
         self.residents = residents

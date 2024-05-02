@@ -103,12 +103,21 @@ class TestTown {
     assertEquals(testValue2Name, t.getName(), "Output not match input");
   }
 
-  @DisplayName("T05: Get correct town as string")
+  @DisplayName("T05: Get correct town information")
   @Test
-  void test5_toStringFunction() {
-    // assert 1 - toString
+  void test5_getInfoFunction() {
+    // assert 1 - correct info string
     Town t = new Town(testValue1Name, testValue1Residents);
-    String template = "Town [name=" + testValue1Name + ", residents=" + testValue1Residents + "]";
+    String template = "The town " + t.getName() + " has " + t.getResidents() + " residents.";
+    assertEquals(template, t.getInfo(), "Output not match template");
+  }
+
+  @DisplayName("T06: Get correct town as string")
+  @Test
+  void test6_toStringFunction() {
+    // assert 1 - correct toString
+    Town t = new Town(testValue1Name, testValue1Residents);
+    String template = "Town('" + testValue1Name + "', " + testValue1Residents + ")";
     assertEquals(template, t.toString(), "Output not match template");
   }
 

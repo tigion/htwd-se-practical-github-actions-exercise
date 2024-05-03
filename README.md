@@ -96,9 +96,10 @@ Folgend ein paar hilfreiche Kommandos (vorher ggf. `cd example-java`):
 
   ```shell
   % java -cp target/example-1.0-SNAPSHOT.jar example.Main
-  Town [name=Dresden, residents=11]
+  The town Dresden has 556780 residents.
+  Town('Dresden', 556780)
   Dresden
-  12
+  -1
   ```
 
 ## Example Python
@@ -153,6 +154,8 @@ Folgend ein paar hilfreiche Kommandos (vorher ggf. `cd example-python`):
 
   ```shell
   % python3 main/main.py
-  Town [name=Dresden, residents=556780]
-  Town [name=Dresden, residents=-1]
+  The town Dresden has 556780 residents.
+  Town('Dresden', 556780)
+  Dresden
+  -1
   ```
